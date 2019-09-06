@@ -209,7 +209,7 @@ public class Main extends Application {
 			 
 			 buton_alegere_imagine.setOnAction(e -> {
 				 int index=-1;
-			 	fileChooser.setInitialDirectory(new File("C:\\Users\\Alin-PC\\Desktop\\Imagine"));
+			 	//fileChooser.setInitialDirectory(new File("C:\\Users\\Alin-PC\\Desktop\\Imagine"));
 	            File selectedFile = fileChooser.showOpenDialog(primaryStage);
 	            //verificare ca fisierul citit sa fie bmp
 	            if (selectedFile.getName().toLowerCase().endsWith("bmp"))
@@ -286,7 +286,7 @@ public class Main extends Application {
 	        	        
 	        	            FileChooser fileChooser1 = new FileChooser();
 	        	            fileChooser1.setTitle("Salveaza imagine");
-	        	            fileChooser1.setInitialDirectory(new File("C:\\Users\\Alin-PC\\Desktop\\Imagine"));
+	        	            //fileChooser1.setInitialDirectory(new File("C:\\Users\\Alin-PC\\Desktop\\Imagine"));
 	        	            fileChooser1.setInitialFileName("Histograma.png");
 	        	            fileChooser1.getExtensionFilters().addAll(
 	        	            	     new FileChooser.ExtensionFilter("PNG Files", "*.png")
